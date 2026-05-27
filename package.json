@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "build": "esbuild src/main.jsx --bundle --outfile=dist/bundle.js --loader:.jsx=jsx"
+    "build": "esbuild src/main.jsx --bundle --outfile=dist/bundle.js --loader:.jsx=jsx && mkdir -p dist && cp public/index.html dist/index.html"
   },
   "dependencies": {
     "react": "^18.3.0",
